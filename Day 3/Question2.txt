@@ -1,0 +1,9 @@
+A function “delete_beg()” for deleting a node from the beginning of the linked list.
+
+node * delete_beg(node * start) {
+  node * ptr;
+  ptr = start;
+  start = start -> next;
+  free(ptr);
+  return start;
+}

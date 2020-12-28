@@ -1,0 +1,27 @@
+A function “insert_any()” for inserting a node at any given position of the linked list.
+  
+void insert_any()  
+{  
+    int data_value, key;  
+    printf("\nEnter data of the node: ");  
+    scanf("%d", &data_value);  
+    printf("\nEnter data of the node after which new node is to be inserted: ");  
+    scanf("%d", &key);  
+    temp = (struct node *) malloc(sizeof(struct node));  
+    //Traverse till key is found or end of the linked list is reached.  
+    ptr = header;  
+    while(ptr->link != NULL && ptr->data != key)  
+    {  
+        ptr = ptr->link;  
+    }  
+    if(ptr->data == key)  
+    {  
+        temp->data = data_value;  
+        temp->link = ptr->link;  
+        ptr->link = temp;  
+    }  
+    else  
+    {  
+        printf("\nValue %d not found\n",key);  
+    }  
+}  
