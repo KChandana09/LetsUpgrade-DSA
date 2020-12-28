@@ -1,0 +1,19 @@
+Time complexity for the following scenarios:
+
+a) for(i=1;i<=n;i++)
+       for(j=i;i<=n;j++)
+	  printf("Hi");
+
+  Here the number of times the “Hi” will print is n^2 times. 
+  Since the outer loop will execute n times and the inner loop will also execute n times.
+  Therefore the total time taken is n*n times which is represented as O(n^2).
+
+b) for(i=1;i<=n;i*=3)
+      for(j=1;i<=n;j++)
+         printf("Hello");
+
+   Here in the outer loop “i” value is getting tribled with each iteration making the “i” to meet condition very quick. 
+   To be precise the time taken will be O(log(n)) for the outerloop.
+   The inner loop will execute n times. 
+   Therefore the time taken is n*log(n) times which is represented as O(nlogn).
+   
