@@ -1,4 +1,4 @@
-#program implementing insert, delete and display operation of Circular Queue
+//program implementing insert, delete and display operation of Circular Queue
 #include<stdio.h>
 #define MAX 5
 int cqueue_arr[MAX];
