@@ -1,0 +1,11 @@
+Once you know start index and end index of array everyone is able to find middle index of array, but there are certain benefits of using beg + (end – beg)/2 over (beg + end)/2, which are described below :
+
+The very first way of finding middle index is
+
+mid = (beg + end)/2
+
+But there is a problem with this approach, what if value of start or end or both is INT_MAX, it will cause integer overflow.
+
+The better way of calculating mid index is :
+
+mid = beg + (end - beg)/2
